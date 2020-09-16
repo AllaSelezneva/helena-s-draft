@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HellEN</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container page-header">
+        <nav class="header-navigation">
+          <a href="./index.html" class="logo"
+            ><img
+              src="./images/logo.png"
+              width="128"
+              height="45"
+              alt="Логотип адский английский"
+          /></a>
+
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="#" class="header-link">Программы обучения</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">О нас</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">Варианты обучения</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="btn-consult">
+          Консультация по телефону
+        </button>
+        <button
+          type="button"
+          class="btn-burger"
+          aria-expanded="false"
+          data-modal-open
+        >
+          <svg
+            class="icon-menu"
+            width="20.5"
+            height="12"
+            aria-label="Переклчатель мобильного меню"
+          >
+            <use class="icon-menu" xlink:href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Descktop and mobile MODAL -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button
+            type="button"
+            class="btn-burger icon-cross"
+            aria-expanded="false"
+            data-modal-close
+          >
+            <svg
+              class="icon-cross"
+              width="14.5"
+              height="14.5"
+              aria-label="Переклчатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                xlink:href="./images/sprite.svg#cross"
+              ></use>
+            </svg>
+          </button>
+          <a href="./index.html" class="logo-modal"
+            ><img
+              class="logo-modal"
+              src="./images/logo-modal.png"
+              width="128"
+              height="45"
+              alt="Логотип Адский английский"
+          /></a>
+
+          <ul class="modal-menu">
+            <li class="header-item">
+              <a href="#" class="header-link">Программы обучения</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">О нас</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">Варианты обучения</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">Контакты</a>
+            </li>
+          </ul>
+          <button type="button" class="btn-consult-modal">
+            Консультация по телефону
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Комплексная подготовка -->
+      <section class="section"></section>
+      <!-- Главные проблемы -->
+      <section class="section"></section>
+      <!-- Как мы это делаем -->
+      <section class="section"></section>
+      <!-- Наша программа -->
+      <section class="section"></section>
+      <!-- Преподаватель -->
+      <section class="section"></section>
+      <!-- Мы гарантируем -->
+      <section class="section"></section>
+      <!-- Отзывы выпускников -->
+    </main>
+    <!-- Подвал сайта -->
+    <footer></footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

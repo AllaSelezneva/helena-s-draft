@@ -1,0 +1,212 @@
+$primary-text-color: #111518;
+$socondary-text-color: #b9b9b9;
+$accent-color: #ff6b09;
+$primery-background-color: #ffffff;
+$socondary-background-color: #e5e5e5;
+// $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.08em;
+
+  background-color: $primery-background-color;
+  color: $primary-text-color;
+
+  margin: 0;
+}
+.container {
+  width: 100%;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1314px) {
+    width: 1314px;
+  }
+}
+// Шапка сайта
+.header {
+  background-color: $primery-background-color;
+  padding: 32px 0;
+}
+.page-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo {
+  margin-right: 144px;
+}
+.header-list {
+  list-style: none;
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1314px) {
+    display: flex;
+    padding: 0;
+    align-content: center;
+    align-items: center;
+  }
+}
+.header-item {
+  margin-right: 40px;
+}
+.header-link {
+  text-decoration: none;
+  color: $socondary-text-color;
+  letter-spacing: 0.03em;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  @media screen and (min-width: 320px) {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.8;
+  }
+  @media screen and (min-width: 1314px) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.btn-consult {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+
+  color: $accent-color;
+  background-color: transparent;
+  border: 2px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $primery-background-color;
+    background-color: $accent-color;
+  }
+  @media screen and (max-width: 320px) {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 1.25;
+    transform: translate(15%, 0);
+    padding: 16px 5px;
+  }
+  @media screen and (min-width: 1314px) {
+    padding: 25px;
+  }
+}
+.btn-burger {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  padding: 40px 25px 40px 40px;
+  @media screen and (min-width: 1314px) {
+    display: none;
+  }
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(17, 21, 24, 0.9);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  @media screen and (min-width: 1314px) {
+    display: none;
+  }
+}
+.modal {
+  min-width: 332px;
+  min-height: 178px;
+  top: 50%;
+  left: 50%;
+  margin-left: 180px;
+
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+.logo-modal {
+  margin-top: 32px;
+}
+.modal-menu {
+  position: relative;
+  list-style: none;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+
+  @media screen and (min-width: 768px) {
+    transform: translate(30%, 0%);
+  }
+}
+.btn-consult-modal {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  color: $accent-color;
+  background-color: transparent;
+  border: 2px solid $accent-color;
+
+  padding: 25px;
+  margin-top: auto;
+  margin-left: auto;
+  transform: translate(15%, 50%);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.icon-cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 35px;
+  margin-right: 20px;
+}
