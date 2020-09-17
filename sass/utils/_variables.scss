@@ -35,7 +35,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
+.header-top {
   width: 320px;
   @media (min-width: 768px) {
     margin: 0 auto;
@@ -48,6 +48,26 @@ img {
     min-width: 1244px;
   }
 }
+
+// .container {
+//   margin-right: auto;
+//   margin-left: auto;
+
+//   @include for-size(phone) {
+//     max-width: $phone-width;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
+//   @include for-size(tablet) {
+//     max-width: $tablet-width;
+//     padding-left: 40px;
+//     padding-right: 40px;
+//   }
+//   @include for-size(desktop) {
+//     max-width: $desktop-width;
+//   }
+// }
+
 // Шапка сайта
 .header {
   padding-top: 26px;
@@ -89,8 +109,7 @@ img {
     height: 48px;
   }
 }
-.logo-modal {
-}
+
 .nav-contact {
   @media (min-width: 768px) {
     display: flex;
@@ -228,11 +247,19 @@ img {
 .modal-menu {
   list-style: none;
   width: 238px;
-  margin: 0 auto 40px;
+  min-width: 260px;
+  // margin: 0 auto 40px;
+
+  margin-left: 20px;
+  margin-right: 40px;
   padding-left: 0;
+  margin-bottom: 50px;
 
   @media (min-width: 768px) {
-    width: 350px;
+    min-width: 350px;
+    width: 332px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .modal-menu .header-item:not(:last-child) {
